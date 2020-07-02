@@ -1,0 +1,67 @@
+@import 'variables'
+
+.ourService
+  display: flex
+  @media ( max-width: 1023px )
+    flex-direction: column
+  &__box
+    witdh: 50%
+    padding: 240px 100px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    @media ( max-width: 1250px )
+      padding: 160px 50px
+    @media ( max-width: 1023px )
+      padding: 0 35px 120px 35px
+      align-items: center
+
+    &--addBorder
+      border-right: 1px solid #CBCBCB
+      @media ( max-width: 1023px )
+        border-right: 0
+        padding-top: 120px
+  &__header
+    font-size: 64px
+    line-height: 80px
+    letter-spacing: -2px
+    color: #000000
+    @media ( max-width: 1250px )
+      font-size: 54px
+      line-height: 70px
+    @media ( max-width: 799px )
+      font-size: 36px
+      line-height: 40px
+  &__paragraph
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    line-height: 30px
+    color: #686868
+    padding: 16px 0 24px 0
+    @media ( max-width: 799px )
+      font-size: 18px
+      line-height: 24px
+  &__contactLink
+
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: -0.5px
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 18px 24px
+    background: $green
+    border: 0
+    border-radius: 4px
+    width: 250px
+    &--addMargin
+      margin-left: 15px
+    @media ( max-width: 1023px )
+      margin: 0 auto
+
+  &__contactLink:hover
+    cursor: pointer
+    background-color: $darkGreen

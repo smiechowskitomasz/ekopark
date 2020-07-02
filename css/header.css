@@ -1,0 +1,125 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-left: 100px;
+  margin-top: 65px;
+  padding-bottom: 130px;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 0 15px 130px 15px;
+  }
+}
+
+@media (min-width: 799px) {
+  .header.header--alignLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header__mainHeader {
+  margin-top: 50px;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 80px;
+  text-align: left;
+  letter-spacing: -2px;
+  color: #111111;
+  max-width: 351px;
+}
+
+@media (max-width: 1023px) {
+  .header__mainHeader {
+    max-width: 531px;
+    font-size: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.header__paragraph {
+  margin: 16px auto 24px auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: #686868;
+}
+
+@media (max-width: 1023px) {
+  .header__paragraph {
+    width: 100%;
+    padding: 0 24px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    max-width: none;
+  }
+}
+
+.header__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .header__img {
+    display: none;
+  }
+}
+
+.header__contactLink {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 18px 24px;
+  background: #31A05F;
+  border: 0;
+  border-radius: 4px;
+}
+
+.header__contactLink--addMargin {
+  margin-left: 15px;
+}
+
+@media (max-width: 1023px) {
+  .header__contactLink {
+    margin: 0 auto;
+  }
+}
+
+.header__contactLink:hover {
+  cursor: pointer;
+  background-color: #c4790a;
+}
+/*# sourceMappingURL=header.css.map */

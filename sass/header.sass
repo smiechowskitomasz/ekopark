@@ -1,0 +1,76 @@
+@import variables
+
+.header
+  display: flex
+  flex-basis: 100%
+  padding-left: 100px
+  margin-top: 65px
+  padding-bottom: 130px
+  @media ( max-width: 1023px )
+    padding: 0 15px 130px 15px
+  &.header--alignLeft
+    @media ( min-width: 799px )
+      display: flex
+      align-items: flex-start
+  &__box
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__mainHeader
+    margin-top: 50px
+    font-style: normal
+    font-size: 72px
+    line-height: 80px
+    text-align: left
+    letter-spacing: -2px
+    color: #111111
+    max-width: 351px
+    @media ( max-width: 1023px )
+      max-width: 531px
+      font-size: 56px
+      line-height: 56px
+      padding: 0 20px
+      text-align: center
+      margin: 0 auto
+
+  &__paragraph
+    margin: 16px auto 24px auto
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    line-height: 30px
+    color: #686868
+    @media ( max-width: 1023px )
+      width: 100%
+      padding: 0 24px
+      font-size: 20px
+      line-height: 28px
+      text-align: center
+      max-width: none
+  &__img
+    display: flex
+    @media ( max-width: 1023px )
+      display: none
+
+  &__contactLink
+
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: -0.5px
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 18px 24px
+    background: $green
+    border: 0
+    border-radius: 4px
+    &--addMargin
+      margin-left: 15px
+    @media ( max-width: 1023px )
+      margin: 0 auto
+
+  &__contactLink:hover
+    cursor: pointer
+    background-color: #c4790a
